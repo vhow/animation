@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group>
+        <item
+            android:id="@+id/play"
+            android:icon="@drawable/ic_play"
+            android:title="@string/play"
+            app:showAsAction="always" />
+        <item
+            android:id="@+id/reset"
+            android:icon="@drawable/ic_reset"
+            android:title="@string/reset"
+            app:showAsAction="ifRoom" />
+    </group>
+    <group>
+        <item
+            android:id="@+id/exaggeration"
+            android:title="@string/exaggeration"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/squash_and_stretch"
+            android:title="@string/squash_and_stretch"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/anticipation"
+            android:title="@string/anticipation"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/staging"
+            android:title="@string/staging"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/straight_and_pose"
+            android:title="@string/straight_and_pose"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/follow_and_overlap"
+            android:title="@string/follow_and_overlap"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/ease_in_ease_out"
+            android:title="@string/ease_in_ease_out"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/arc"
+            android:title="@string/arc"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/rotate"
+            android:title="@string/rotate"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/timing"
+            android:title="@string/timing"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/secondary_action"
+            android:title="@string/secondary_action"
+            android:visible="false"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/solid_drawing"
+            android:title="@string/solid_drawing"
+            android:visible="false"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/appeal"
+            android:title="@string/appeal"
+            android:visible="false"
+            app:showAsAction="never" />
+    </group>
+</menu>

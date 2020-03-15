@@ -1,0 +1,11 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+    <dimen name="stroke_width">12dp</dimen>
+    <dimen name="shape_size">80dp</dimen>
+    <dimen name="shape_size_twice">160dp</dimen>
+    <dimen name="shape_size_small">60dp</dimen>
+    <dimen name="surface_width">20dp</dimen>
+    <dimen name="surface_height">200dp</dimen>
+    <dimen name="ss_margin_start">150dp</dimen>
+</resources>

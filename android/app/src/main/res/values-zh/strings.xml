@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">动画准则</string>
+    <string name="anticipation">预备动作</string>
+    <string name="staging">突出强调</string>
+    <string name="follow_and_overlap">跟随和重叠</string>
+    <string name="ease_in_ease_out">缓入缓出</string>
+    <string name="arc">弧线运动</string>
+    <string name="squash_and_stretch">挤压和拉伸</string>
+    <string name="straight_and_pose">连续运动 + 行为呼应</string>
+    <string name="secondary_action">次要动作</string>
+    <string name="timing">时间节奏</string>
+    <string name="exaggeration">夸张</string>
+    <string name="appeal">吸引力</string>
+    <string name="solid_drawing">扎实的描绘</string>
+    <string name="play">Play</string>
+    <string name="reset">Reset</string>
+    <string name="rotate">弧度旋转</string>
+</resources>

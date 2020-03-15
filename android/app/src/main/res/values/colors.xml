@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00695C</color>
+    <color name="colorPrimaryDark">#004D40</color>
+    <color name="colorAccent">#009688</color>
+    <color name="background">#009688</color>
+    <color name="targetFill">#FFC107</color>
+    <color name="targetBorder">#FFFFFF</color>
+    <color name="targetFillInter">#2196F3</color>
+    <color name="surface">#000000</color>
+    <color name="navigation_bar_bg">#22000000</color>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Animation</string>
+    <string name="anticipation">Anticipation</string>
+    <string name="staging">Staging</string>
+    <string name="follow_and_overlap"><![CDATA[Follow Through & Overlapping Action]]></string>
+    <string name="ease_in_ease_out"><![CDATA[Ease in & Ease out]]></string>
+    <string name="arc">Arc</string>
+    <string name="squash_and_stretch"><![CDATA[Squash & Stretch]]></string>
+    <string name="straight_and_pose"><![CDATA[Straight-Ahead Action & Pose-to-Pose]]></string>
+    <string name="secondary_action">Secondary Action</string>
+    <string name="timing">Timing</string>
+    <string name="exaggeration">Exaggeration</string>
+    <string name="appeal">Appeal</string>
+    <string name="solid_drawing">Solid Drawing</string>
+    <string name="play">Play</string>
+    <string name="reset">Reset</string>
+    <string name="rotate">Rotate</string>
+</resources>

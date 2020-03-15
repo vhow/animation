@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/target_inter"
+        android:layout_width="@dimen/shape_size_small"
+        android:layout_height="@dimen/shape_size_small"
+        android:layout_centerInParent="true"
+        android:background="@drawable/square" />
+
+    <RelativeLayout
+        android:id="@+id/target_outer"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_centerInParent="true">
+
+        <View
+            android:layout_width="@dimen/shape_size"
+            android:layout_height="@dimen/shape_size"
+            android:background="@drawable/square_outer" />
+    </RelativeLayout>
+</RelativeLayout>
