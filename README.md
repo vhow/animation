@@ -6,7 +6,7 @@ This project demonstrates [12 basic principles of animation](https://en.wikipedi
  - All animations in this project are written & implemented with [Android Property Animation](https://developer.android.com/guide/topics/graphics/prop-animation.html)
  APIs.
 
-Download the APK file [animation-principles-v0.9.1-release.apk](https://github.com/vhow/animation/releases/download/v0.9.1/animation-principles-v0.9.1-release.apk)
+Download the APK file [animation-principles-v0.9.2-release.apk](https://github.com/vhow/animation/releases/download/v0.9.2/animation-principles-v0.9.2-release.apk)
 
 ## Exaggeration
 
