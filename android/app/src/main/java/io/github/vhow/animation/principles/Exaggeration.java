@@ -5,12 +5,13 @@ import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
 import android.animation.ValueAnimator;
 import android.os.Bundle;
-import androidx.annotation.Nullable;
 import android.util.Property;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.PathInterpolator;
+
+import androidx.annotation.Nullable;
 
 import io.github.vhow.animation.R;
 import io.github.vhow.animation.util.BaseFragment;

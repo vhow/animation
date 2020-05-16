@@ -3,11 +3,12 @@ package io.github.vhow.animation.principles;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.os.Bundle;
-import androidx.core.view.animation.PathInterpolatorCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Interpolator;
+
+import androidx.core.view.animation.PathInterpolatorCompat;
 
 import io.github.vhow.animation.R;
 import io.github.vhow.animation.util.BaseFragment;

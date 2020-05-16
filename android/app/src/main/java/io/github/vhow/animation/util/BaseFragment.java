@@ -1,8 +1,9 @@
 package io.github.vhow.animation.util;
 
 import android.animation.Animator;
-import androidx.fragment.app.Fragment;
 import android.view.View;
+
+import androidx.fragment.app.Fragment;
 
 import java.util.ArrayList;
 import java.util.Collections;

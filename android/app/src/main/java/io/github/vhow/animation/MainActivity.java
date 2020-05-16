@@ -5,17 +5,19 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.preference.PreferenceManager;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.viewpager.widget.ViewPager;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -36,16 +38,9 @@ import io.github.vhow.animation.util.BaseFragment;
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     private static final String KEY_LAST_PRINCIPLE = "last_principle";
-    private final Handler mHandler = new UiHandler(this);
-    private SharedPreferences mPref;
-    private ViewPager mViewPager;
-    private MyPagerAdapter mAdapter;
-    private Toolbar mToolbar;
-
     private static List<Integer> sPrincipleList = new ArrayList<>();
 
     static {
-        sPrincipleList.add(R.id.exaggeration);
         sPrincipleList.add(R.id.anticipation);
         sPrincipleList.add(R.id.squash_and_stretch);
         sPrincipleList.add(R.id.staging);
@@ -55,7 +50,14 @@ public class MainActivity extends AppCompatActivity {
         sPrincipleList.add(R.id.arc);
         sPrincipleList.add(R.id.rotate);
         sPrincipleList.add(R.id.timing);
+        sPrincipleList.add(R.id.exaggeration);
     }
+
+    private final Handler mHandler = new UiHandler(this);
+    private SharedPreferences mPref;
+    private ViewPager mViewPager;
+    private MyPagerAdapter mAdapter;
+    private Toolbar mToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -171,21 +173,19 @@ public class MainActivity extends AppCompatActivity {
         }
 
         @Override
-        public void handleMessage(Message msg) {
+        public void handleMessage(@NonNull Message msg) {
             super.handleMessage(msg);
             final MainActivity activity = mRef.get();
             if (activity == null) {
                 return;
             }
-            switch (msg.what) {
-                case MSG_START_ANIMATION:
-                    activity.startAnimation();
-                    break;
+            if (msg.what == MSG_START_ANIMATION) {
+                activity.startAnimation();
             }
         }
     }
 
-    private class MyPagerAdapter extends FragmentPagerAdapter {
+    private static class MyPagerAdapter extends FragmentPagerAdapter {
         private final List<BaseFragment> mList = new ArrayList<>();
 
         private MyPagerAdapter(FragmentManager fm) {
@@ -231,6 +231,7 @@ public class MainActivity extends AppCompatActivity {
             return mList.get(position).getTitle();
         }
 
+        @NonNull
         @Override
         public Fragment getItem(int position) {
             return mList.get(position);
