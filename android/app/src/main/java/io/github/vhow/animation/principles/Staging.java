@@ -3,7 +3,7 @@ package io.github.vhow.animation.principles;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.os.Bundle;
-import android.support.v4.view.animation.PathInterpolatorCompat;
+import androidx.core.view.animation.PathInterpolatorCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
